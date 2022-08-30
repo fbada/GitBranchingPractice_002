@@ -15,10 +15,18 @@ Git Branching Strategy
 
 Flow from our SIDE:
     --> assume you cloned the project; make sure you update the project(up to date)
-    o Create a new feature Branch LOCALLY from the DEVELOP branch; never MASTER
-            > create some changes, then we commit and push to ORIGIN -> on the repo [GitHub] feature branch
-    o create a pull request from your feature branch to the develop branch
-        >> someone approves AND merges; this is PART of the team flow
-    o repeat above steps for as many steps for as many feature or changes needed, until a stable ver of that
-                app, or the sprint finishes
+        o Create a new feature Branch LOCALLY from the DEVELOP branch; never MASTER
+                > create some changes, then we commit and push to ORIGIN -> on the repo [GitHub] feature branch
+        o create a pull request from your feature branch to the develop branch
+            >> someone approves AND merges; this is PART of the team flow
+        o repeat above steps for as many steps for as many feature or changes needed, until a stable ver of that
+                    app, or the sprint finishes
          > team creates pull request from DEVELOP to MASTER
+-------------------------------------------------------------------
+Our team made changes to the develop branch.
+
+    > How do we get those changes in order to continue working with those new changes
+        > checkout to our local develop branch
+        > update the branch (origin develop -> local develop)
+        > checkout to our local feature branch
+        > merged from local develop into local feature

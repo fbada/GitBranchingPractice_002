@@ -68,8 +68,7 @@ Update local project with changes from other team members on remote
 repository (develop branch)
 
 In the local repositories create a new branch from develop branch
-- for this practice use your name for each personal
-branch
+- for this practice use your name for each personal branch
 Makes some changes by adding files or updating a file (work in
 separate files to avoid conflicts)
 

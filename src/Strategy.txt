@@ -1,0 +1,24 @@
+-------------------------------------------------------------------
+Git Branching Strategy
+-------------------------------------------------------------------
+
+> MASTER branch -> contains the stable application
+-------------------------------------------------------------------
+
+ > DEVELOP branch
+-------------------------------------------------------------------
+        o collect the updates before pushed to the master branch
+
+        > feature-A
+        > feature-B
+-------------------------------------------------------------------
+
+Flow from our SIDE:
+    --> assume you cloned the project; make sure you update the project(up to date)
+    o Create a new feature Branch LOCALLY from the DEVELOP branch; never MASTER
+            > create some changes, then we commit and push to ORIGIN -> on the repo [GitHub] feature branch
+    o create a pull request from your feature branch to the develop branch
+        >> someone approves AND merges; this is PART of the team flow
+    o repeat above steps for as many steps for as many feature or changes needed, until a stable ver of that
+                app, or the sprint finishes
+         > team creates pull request from DEVELOP to MASTER
